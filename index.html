@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.6.1/randomColor.min.js"
         integrity="sha512-vPeZ7JCboHcfpqSx5ZD+/jpEhS4JpXxfz9orSvAPPj0EKUVShU2tgy7XkU+oujBJKnWmu4hU7r9MMQNWPfXsYw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
     <title>Color Selection Website</title>
 
 </head>
@@ -186,8 +186,8 @@
         </p>
         <br><br />
         <div class="color-container">
-            <div class="color-option" style="background-color:rgb(43, 85, 141); width: 50%;height: 33vh;"
-                id="allColors" onclick="openFullscreenallColors()"></div>
+            <div class="color-option" style="background-color:rgb(43, 85, 141); width: 50%;height: 33vh;" id="allColors"
+                onclick="openFullscreenallColors()"></div>
         </div>
         <p>You can either initiate a slideshow of random colors or enable the display to cycle
 
@@ -342,7 +342,7 @@
                     </div>
                     <div class="col rightSide" id="colorScreenBg">
                         <p id="colorText">
-                       Black Screen</p>
+                            Black Screen</p>
                     </div>
                 </div>
             </div>
@@ -350,8 +350,8 @@
     </div>
     <br></br>
     <p>
-        <button type="button" class="btn btn-outline-secondary"
-            style="width: 30vh; height: 8vh; border-radius: 30px;" id="btnScreen" onclick="openFullscreenbtn()">Full screen mode</button>
+        <button type="button" class="btn btn-outline-secondary" style="width: 30vh; height: 8vh; border-radius: 30px;"
+            id="btnScreen" onclick="openFullscreenbtn()">Full screen mode</button>
     </p>
 
     <br></br>
@@ -390,34 +390,34 @@
                     <h3><b>Black screen</b></h3>
                     <div class="p-3" style="background-color: #ffffff;">
                         <div class="dropdown" style=" left: 6%;" id="sizeSelect">
-                            <button class="btn btn-outline-secondary dropdown-toggle" 
+                            <button class="btn btn-outline-secondary dropdown-toggle"
                                 style="width: 18vh; height: 6vh; border: 1px solid;" type="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 430px </button>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" value="50x50" >50px</a></li>
-                               
-                                <li><a class="dropdown-item" value="100x100" >100px</a></li>
-                              
+                                <li><a class="dropdown-item" value="50x50">50px</a></li>
+
+                                <li><a class="dropdown-item" value="100x100">100px</a></li>
+
                                 <li><a class="dropdown-item" value="150x150">150px</a></li>
                             </ul>
                         </div>
                         <div class="mb-3 row" style="margin: 1rem;">
-                            <label  class="col-sm-2 col-form-label"><b>Width</b></label>
+                            <label class="col-sm-2 col-form-label"><b>Width</b></label>
                             <div class="col-sm-5" style="left:20%;">
                                 <input type="text" class="form-control" id="inputtextw" placeholder="450px"
                                     style="border:1px solid">
                             </div>
                         </div>
                         <div class="mb-3 row" style="margin: 1rem;">
-                            <label  class="col-sm-2 col-form-label"><b>Height</b></label>
+                            <label class="col-sm-2 col-form-label"><b>Height</b></label>
                             <div class="col-sm-5" style="left:20%;">
                                 <input type="text" class="form-control" id="inputtexth" placeholder="450px"
                                     style="border:1px solid">
                             </div>
                         </div>
                         <div class="mb-3 row" style="margin: 1rem;">
-                            <label  class="col-sm-2 col-form-label"><b>Color</b></label>
+                            <label class="col-sm-2 col-form-label"><b>Color</b></label>
                             <div class="col-sm-5" style="left:20%;">
                                 <input type="text" class="form-control" id="inputtextcol" placeholder="black"
                                     style="border:1px solid">
@@ -428,11 +428,14 @@
                 <div class="col">
                     <div class="p-3">
                         <div class="card" style="width:14rem; border: none; align-items: center;">
-                            <div class="card-body"  style="border-radius: 10px;"></div><div id="myDiv" style="width:10rem; height: 13rem; background: #000; border-radius: 10px; left:15%">
+                            <div class="card-body" style="border-radius: 10px;"></div>
+                            <div id="myDiv"
+                                style="width:10rem; height: 13rem; background: #000; border-radius: 10px; left:15%">
                                 <!-- img should be here -->
                             </div>
                             <div style="margin-top: 10px;"> <button type="button" class="btn btn-outline-secondary"
-                                    style="width: 23vh; height: 6.5vh; border-radius: 30px;" id="downloadButton">Download</button></div>
+                                    style="width: 23vh; height: 6.5vh; border-radius: 30px;"
+                                    id="downloadButton">Download</button></div>
                         </div>
                     </div>
                 </div>
@@ -787,28 +790,11 @@
             } else if (colorScreenBg.msRequestFullscreen) { /* IE11 */
                 colorScreenBg.msRequestFullscreen();
             }
-        }
-
-        // const colorInput = document.getElementById("colorInput");
-        // const colorDiv = document.getElementById("colorDiv");
-        // const changeColorButton = document.getElementById("changeColorButton");
-        // function changeBackgroundColor(color) {
-        //     colorDiv.style.backgroundColor = color;
-        // }
-        // changeColorButton.addEventListener("click", function() {
-        //     const inputColor = colorInput.value;
-        //     changeBackgroundColor(inputColor);
-        // });
+        } 
         var colorChangerColor = document.getElementById("colorChangerColor")
         var colorChangerHex = document.getElementById("colorChangerHex")
         var colorInput = document.getElementById("colorInput")
         var colorInputHex = document.getElementById("colorInputHex")
-        //    yahan se dobara start karna
-
-        // changeBackgroundColor.addEventListener("input",function(){
-        //     colorChangerColor.style.backgroundColor=colorInput.value;
-        //     // colorChangerHex.style.backgroundColor=color.value;
-        // });
 
         colorChangerColor.style.backgroundColor = colorInput.value;
 
@@ -835,123 +821,123 @@
         });
 
 
-// SlideShow div
+        // SlideShow div
 
-    const allColors = document.getElementById('allColors')
-    function getRandomColor() {
-      const letters = '0123456789ABCDEF';
-      let color = '#';
-      for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-      }
-      console.log("test")
-      return color;
-    }
-    function changeBackgroundColor() {
-      const randomColor = getRandomColor();
-      allColors.style.backgroundColor = randomColor;
-    }
-    setInterval(changeBackgroundColor, 2000);
+        const allColors = document.getElementById('allColors')
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            console.log("test")
+            return color;
+        }
+        function changeBackgroundColor() {
+            const randomColor = getRandomColor();
+            allColors.style.backgroundColor = randomColor;
+        }
+        setInterval(changeBackgroundColor, 2000);
 
-// Text Eiditor
-var colorInputBg=document.getElementById("colorInputBg");
-var colorInputText=document.getElementById("colorInputText");
-var textarea=document.getElementById("floatingTextarea2");
-var colorText=document.getElementById("colorText");
-var colorScreenBg=document.getElementById("colorScreenBg");
-var btnScreen=document.getElementById("btnScreen");
+        // Text Eiditor
+        var colorInputBg = document.getElementById("colorInputBg");
+        var colorInputText = document.getElementById("colorInputText");
+        var textarea = document.getElementById("floatingTextarea2");
+        var colorText = document.getElementById("colorText");
+        var colorScreenBg = document.getElementById("colorScreenBg");
+        var btnScreen = document.getElementById("btnScreen");
 
-textarea.style.color=colorInputText.value;
+        textarea.style.color = colorInputText.value;
 
-colorInputText.addEventListener("input",function(){
-    textarea.style.color=colorInputText.value;
-});
-
-textarea.addEventListener('input', function() {
-      const enteredText = textarea.value;
-    //   colorInputText.style.backgroundColor=colorText.value;
-      colorText.textContent = ` ${enteredText}`;
-    });
-colorInputBg.addEventListener("input", function () {
-            // Update the background color of the div with the selected color
-            colorScreenBg.style.backgroundColor =colorInputBg.value;
+        colorInputText.addEventListener("input", function () {
+            textarea.style.color = colorInputText.value;
         });
-// COLOR CHANGE TEXT BOX wALLPAPER TOOL GENRATOR
-// Color
-const inputtextcol = document.getElementById("inputtextcol");
-  const myDiv = document.getElementById("myDiv");
 
-  inputtextcol.addEventListener("input", () => {
-    const inputColor = inputtextcol.value;
+        textarea.addEventListener('input', function () {
+            const enteredText = textarea.value;
+            //   colorInputText.style.backgroundColor=colorText.value;
+            colorText.textContent = ` ${enteredText}`;
+        });
+        colorInputBg.addEventListener("input", function () {
+            // Update the background color of the div with the selected color
+            colorScreenBg.style.backgroundColor = colorInputBg.value;
+        });
+        // COLOR CHANGE TEXT BOX wALLPAPER TOOL GENRATOR
+        // Color
+        const inputtextcol = document.getElementById("inputtextcol");
+        const myDiv = document.getElementById("myDiv");
 
-    if (isValidColor(inputColor)) {
-      myDiv.style.backgroundColor = inputColor;
-    }
-  });
+        inputtextcol.addEventListener("input", () => {
+            const inputColor = inputtextcol.value;
 
-  // Function to validate color
-  function isValidColor(color) {
-    const colorTest = new Option().style;
-    colorTest.color = color;
-    return colorTest.color === color;
-  }
+            if (isValidColor(inputColor)) {
+                myDiv.style.backgroundColor = inputColor;
+            }
+        });
 
-// width
+        // Function to validate color
+        function isValidColor(color) {
+            const colorTest = new Option().style;
+            colorTest.color = color;
+            return colorTest.color === color;
+        }
 
-const inputtexth = document.getElementById("inputtexth");
-  inputtexth.addEventListener("input", () => {
-    const newWidth = inputtexth.value + "px";
-    myDiv.style.width = newWidth;
-  });
-const inputtextw = document.getElementById("inputtextw");
+        // width
 
-// height
+        const inputtexth = document.getElementById("inputtexth");
+        inputtexth.addEventListener("input", () => {
+            const newWidth = inputtexth.value + "px";
+            myDiv.style.width = newWidth;
+        });
+        const inputtextw = document.getElementById("inputtextw");
 
-inputtextw.addEventListener("input", () => {
-  const newHeight = inputtextw.value + "px";
-  myDiv.style.height = newHeight;
- 
-});
+        // height
 
-// download btn
-document.getElementById('downloadButton').addEventListener('click', function() {
-           
+        inputtextw.addEventListener("input", () => {
+            const newHeight = inputtextw.value + "px";
+            myDiv.style.height = newHeight;
 
-           // Use HTML2Canvas to capture the div as an image
-           html2canvas(myDiv).then(function(canvas) {
-               // Convert the canvas to a data URL
-               const dataURL = canvas.toDataURL('image/png');
+        });
 
-               // Create a link element
-               const downloadLink = document.createElement('a');
-               downloadLink.href = dataURL;
-               downloadLink.download = 'content.png'; // Specify the filename
-               downloadLink.style.display = 'none';
+        // download btn
+        document.getElementById('downloadButton').addEventListener('click', function () {
 
-               // Append the link to the body and trigger the download
-               document.body.appendChild(downloadLink);
-               downloadLink.click();
 
-               // Clean up
-               document.body.removeChild(downloadLink);
-           });
-       });
-// drop down
- const sizeSelect = document.getElementById("sizeSelect");
-//   const myDiv = document.getElementById("myDiv");
+            // Use HTML2Canvas to capture the div as an image
+            html2canvas(myDiv).then(function (canvas) {
+                // Convert the canvas to a data URL
+                const dataURL = canvas.toDataURL('image/png');
 
-  sizeSelect.addEventListener("change", updatemyDivSize);
+                // Create a link element
+                const downloadLink = document.createElement('a');
+                downloadLink.href = dataURL;
+                downloadLink.download = 'content.png'; // Specify the filename
+                downloadLink.style.display = 'none';
 
-  function updatemyDivSize() {
-    const selectedSize = sizeSelect.value.split("x");
-    const selectedWidth = parseInt(selectedSize[0]);
-    const selectedHeight = parseInt(selectedSize[1]);
-    
-    myDiv.style.width = selectedWidth + "px";
-    myDiv.style.height = selectedHeight + "px";
-  }
-  
-</script>
+                // Append the link to the body and trigger the download
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+
+                // Clean up
+                document.body.removeChild(downloadLink);
+            });
+        });
+        // drop down
+        const sizeSelect = document.getElementById("sizeSelect");
+        //   const myDiv = document.getElementById("myDiv");
+
+        sizeSelect.addEventListener("change", updatemyDivSize);
+
+        function updatemyDivSize() {
+            const selectedSize = sizeSelect.value.split("x");
+            const selectedWidth = parseInt(selectedSize[0]);
+            const selectedHeight = parseInt(selectedSize[1]);
+
+            myDiv.style.width = selectedWidth + "px";
+            myDiv.style.height = selectedHeight + "px";
+        }
+
+    </script>
 </body>
 
 </html>
