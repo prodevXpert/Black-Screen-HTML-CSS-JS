@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.6.1/randomColor.min.js"
+        integrity="sha512-vPeZ7JCboHcfpqSx5ZD+/jpEhS4JpXxfz9orSvAPPj0EKUVShU2tgy7XkU+oujBJKnWmu4hU7r9MMQNWPfXsYw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.3.2/html2canvas.min.js"></script>
+    <title>Color Selection Website</title>
+
+</head>
+
+<body>
+    <div class="header-container">
+        <a href="#about">About us</a>
+        <a href="#contact">Contact us</a>
+        <a href="#pricacy">Privacy Policy</a>
+        <a href="#faqs">FAQS</a>
+    </div>
+    <br>
+    <div class="main-container">
+        <br></br>
+        <h1>Black Screen</h1>
+        <br><br />
+        <p>This website allows you to effortlessly switch your display to a completely black screen.<br><br /> You
+            can utilize this feature to locate any dead pixels, showcase a message, conserve<br><br />energy, or
+            simply clean your screen for a more impressive look.</p>
+        <br><br />
+        <div class="color-container">
+            <div class="color-option" style="background-color:black"></div>
+        </div>
+        <br><br />
+        <div class="main-container">
+            <p>To obtain a completely black screen, select the black box located below. Press the ESC <br><br />key
+                to exit and return to your previous display. or click on the other colors to get<br><br /> full
+                color screen.</p>
+        </div>
+    </div>
+    <br><br />
+    <br></br>
+    <!-- *********************5 tiles veiw***************************************** -->
+    <div class="container text-center" id="overlay">
+        <div id="content">
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-6">
+                    <div class="blackTile" id="blackTile" onclick="openFullscreen()"
+                        style="background-color:black; border-radius:10px;  justify-content: center;">
+                    </div>
+                </div>
+                <div class="col col-lg-6">
+                    <div class="row" style=" justify-content: center;">
+                        <div class="col col-xs-12 col-sm-12 col-md-6">
+                            <div class="sm-tiles"
+                                style="background-color:#ffffff; border-radius:10px; border:1px solid grey;"
+                                id="whiteTile" onclick="openFullscreenw()"></div>
+                        </div>
+                        <div class="col col-xs-12 col-sm-12 col-md-6" style="right: 23%;">
+                            <div>
+                                <div class="sm-tiles"
+                                    style="background-color:#860606; border-radius:10px; border:1px solid grey;"
+                                    id="red" onclick="openFullscreenr()"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- tiles buuttons start -->
+                    <!-- <div class="row">
+                    <div class="col col-xs-12 col-sm-12 col-md-6">
+                        <button type="button" class="btn btn-outline-secondary btn-tile" id="whiteBtn" onclick="openFullscreen()">White</button>
+
+                    </div>
+                    <div class="col col-xs-12 col-sm-12 col-md-6" style="right: 23%;">
+                        <button type="button" class="btn btn-outline-danger btn-tile" id="redBtn" onclick="openFullscreen()">Red</button>
+
+                    </div>
+                </div> -->
+                    <!-- tiles buuttons end -->
+                    <div class="row">
+                        <div class="col col-xs-12 col-sm-12 col-md-6">
+                            <div class="sm-tiles" style="background-color:green; border-radius:10px" id="green"
+                                onclick="openFullscreeng()"></div>
+                        </div>
+                        <div class="col col-xs-12 col-sm-12 col-md-6" style="right: 23%;">
+                            <div class="sm-tiles" style="background-color:blue; border-radius:10px" id="blue"
+                                onclick="openFullscreenb()"></div>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                    <div class="col col-xs-12 col-sm-12 col-md-6">
+                        <button type="button" class="btn btn-outline-success btn-tile" id="greenBtn" onclick="openFullscreen()">Green</button>
+
+                    </div>
+                    <div class="col col-xs-12 col-sm-12 col-md-6" style="right: 23%;">
+                        <button type="button" class="btn btn-outline-primary btn-tile" id="blueBtn" onclick="openFullscreen()">Blue</button>
+
+                    </div>
+
+                </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- *********************5 tiles veiw finish***************************************** -->
+    <br></br>
+    <br></br>
+    <!-- ************************ 2 color tile comperision********************* -->
+    <div class="container">
+        <p>Alternatively, you can input a color name that is recognized by your browser or a<br><br />
+            hexadecimal color code (for instance, Teal, #244054) to change the screen color.
+        </p>
+        <br></br>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col" style="border-radius: 10px; height:14rem; float:right; ">
+                    <div class="colorChangerColor"
+                        style="float:right;  border-radius: 10px; height:14rem; width: 12rem;" id="colorChangerColor"
+                        onclick="openFullscreenColor()">
+                    </div>
+                </div>
+                <div class="col" style="margin-top:5rem;">
+                    <h1>OR</h1>
+                </div>
+                <!-- <div class="col" style=" background-color: #a4b799; border-radius: 10px;height:14rem; width: 12rem;"><div>OR</div></div> -->
+                <div class="col" style=" border-radius: 10px; height:14rem;">
+                    <div class="colorChangerHex" style=" border-radius: 10px; height:14rem; width: 12rem; float:left;"
+                        id="colorChangerHex" onclick="openFullscreenHex()">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col" style="margin-left: 9.8rem; margin-top: 1rem;"><input class="form-control" type="text"
+                        placeholder="Enter color name" style="width:12rem;  text-align: center;" id="colorInput"
+                        onchange="colorInput()"></div>
+                <div class="col" style="margin-right: 9.8rem; margin-top: 1rem;"><input class="form-control" type="text"
+                        placeholder="Enter Hex Code" style="width:12rem; float: right; text-align: center;"
+                        id="colorInputHex" onchange="colorInputHex()"></div>
+            </div>
+        </div>
+    </div>
+    <br></br>
+
+    <div class="container">
+        <p>
+            Select your preferred color from the options provided or use the color picker tool
+            <br><br />
+            to make a custom selection..
+        </p>
+        <br></br>
+        <div class="card-deck mb-4">
+            <div class="card mb-4" style="border: #fff;">
+                <div class="card-body cgreen" id="cgreenDiv" onclick="openFullscreencgreen()"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="row row-cols-2" style="margin-left: 4rem;">
+            <div class="col" style="margin-top: 1.5rem;">
+                <div class="card-body" style="float:right; ">
+                    <p>Choose your color- </p>
+                </div>
+            </div>
+            <div class="col" style="margin-top: 1rem; left: 5px; ;">
+                <div class="card-body" style="float:left;top:3 rem;">
+                    <!-- <div class="color-picker"></div> -->
+                    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#42B089"
+                        title="Choose your color">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <br><br />
+    <div class="container">
+        <p>You can either initiate a slideshow of random colors or enable the display to cycle
+            <br><br />
+            through colors automatically.
+        </p>
+        <br><br />
+        <div class="color-container">
+            <div class="color-option" style="background-color:rgb(43, 85, 141); width: 50%;height: 33vh;"
+                id="allColors" onclick="openFullscreenallColors()"></div>
+        </div>
+        <p>You can either initiate a slideshow of random colors or enable the display to cycle
+
+            <br><br /> through colors automatically.
+        </p>
+        <br>
+    </div>
+    <div class="row row-cols-9 row-cols-sm-9 g-4" style="margin: 1rem; margin-left: 3rem;">
+        <div class="col">
+            <div class="card" style="background-color: #1d5321c2; height: 5rem; width: 5rem; border-radius: 10px;">
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #031436d9; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #f09bd3d9; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #d0ceced9; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #92beebd9; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #aa80e8; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #e8d675d9; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #92f2c7d9; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #6428dcd9; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+    </div>
+    <br></br>
+    <!-- ********************************second row*****************************************************-->
+    <div class="row row-cols-9 row-cols-sm-9 g-4" style="margin: 1rem; margin-left: 3rem;">
+        <div class="col">
+            <div class="card" style="background-color: #dfd543; height: 5rem; width: 5rem; border-radius: 10px;">
+
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #b2effd; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #4f1480f0; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #c8c3c3; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #808146d9; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #3a1111; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #cf5c5cd9; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #74b9dbf9; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="background-color: #a128b1d9; height: 5rem; width: 5rem; border-radius: 10px; ">
+            </div>
+        </div>
+    </div>
+    <br></br>
+    <p>Alternatively, you can opt to exhibit a message on the screen without altering the
+
+        <br><br /> background color.
+    </p>
+    <br><br />
+    <!-- ********************************  style colored text eiditor *****************************************************-->
+    <div class="container-md">
+        <div class="richTextEidtor">
+            <div class="editorHeader" style="text-align: center;">
+                <h3>Show notice</h3>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col leftSide">
+                        <div class="grid text-center topgrid">
+                            <div></div>
+                            <div class="text1">
+                                <p><b>Text</b></p>
+                            </div>
+                            <input type="color" class="form-control form-control-color" id="colorInputText"
+                                value="#D11A7B" title="Choose your color" style="border: none;">
+                            <!-- <div class="text-colorChanger"></div> -->
+                            <div class="bg">
+                                <p> <b>Background</b></p>
+                            </div>
+                            <input type="color" class="form-control form-control-color" id="colorInputBg"
+                                value="#D11A7B" title="Choose your color" style="border: none;">
+                            <!-- <div class="bg-colorChanger"></div> -->
+                            <div></div>
+                        </div>
+                        <div class="textArea">
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="" id="floatingTextarea2"
+                                    style="height: 200px; width: 80%; margin-left:3rem; border-radius: 20px;"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row" style="width: 65vh; margin-top: 1rem; margin-left: 3rem;">
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    style="height: 6vh; width: 7vh;"><b>B</b></button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    style="height: 6vh; width: 7vh;">/</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    style="height: 6vh; width: 7vh;"><u>U</u></button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    style="height: 6vh; width: 7vh;"><b>A</b></button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    style="height: 6vh; width: 7vh;"><b>B</b></button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-outline-secondary"
+                                    style="height: 6vh; width: 7vh;"><b>C</b></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col rightSide" id="colorScreenBg">
+                        <p id="colorText">
+                       Black Screen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br></br>
+    <p>
+        <button type="button" class="btn btn-outline-secondary"
+            style="width: 30vh; height: 8vh; border-radius: 30px;" id="btnScreen" onclick="openFullscreenbtn()">Full screen mode</button>
+    </p>
+
+    <br></br>
+    <div class="container-wallpaper">
+        <h1>WALLPAPERS</h1>
+        <p>Obtain a black wallpaper for your desktop, tablet, or mobile device by downloading it from here.</p>
+        <div class="wallpaper-veiw">
+            <div class="row" style="margin: 8rem;padding: 10px;">
+                <div class="col">
+                    <div class="text-center">
+                        <p><b>Desktop view</b></p>
+                        <img src="HD-wallpaper-plain-black-black.jpg" class="rounded" alt="..."
+                            style="height:30vh; width: 60vh; margin-top: 3rem;">
+                    </div>
+                </div>
+                <div class="col">
+                    <p><b>Mobile view</b></p>
+                    <div class="text-center"> <img src="HD-wallpaper-plain-black-black.jpg" class="rounded " alt="..."
+                            style="height:45vh; width:30vh;"></div>
+                </div>
+                <div class="col">
+                    <p><b>Tablate view</b></p>
+                    <div class="text-center"> <img src="HD-wallpaper-plain-black-black.jpg" class="rounded"
+                            style="height:45vh; width:40vh;" alt="..."></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br></br>
+    <div class="container tool-wallpaper">
+        <h1 style="font-weight: bold; font-size: 2rem;">A tool for generating wallpapers</h1>
+        <br></br>
+        <div class="container overflow-hidden text-center" style="border: 1px solid; width: 100vh;">
+            <div class="row gx-5">
+                <div class="col" style="margin-top:10px;">
+                    <h3><b>Black screen</b></h3>
+                    <div class="p-3" style="background-color: #ffffff;">
+                        <div class="dropdown" style=" left: 6%;" id="sizeSelect">
+                            <button class="btn btn-outline-secondary dropdown-toggle" 
+                                style="width: 18vh; height: 6vh; border: 1px solid;" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                430px </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" value="50x50" >50px</a></li>
+                               
+                                <li><a class="dropdown-item" value="100x100" >100px</a></li>
+                              
+                                <li><a class="dropdown-item" value="150x150">150px</a></li>
+                            </ul>
+                        </div>
+                        <div class="mb-3 row" style="margin: 1rem;">
+                            <label  class="col-sm-2 col-form-label"><b>Width</b></label>
+                            <div class="col-sm-5" style="left:20%;">
+                                <input type="text" class="form-control" id="inputtextw" placeholder="450px"
+                                    style="border:1px solid">
+                            </div>
+                        </div>
+                        <div class="mb-3 row" style="margin: 1rem;">
+                            <label  class="col-sm-2 col-form-label"><b>Height</b></label>
+                            <div class="col-sm-5" style="left:20%;">
+                                <input type="text" class="form-control" id="inputtexth" placeholder="450px"
+                                    style="border:1px solid">
+                            </div>
+                        </div>
+                        <div class="mb-3 row" style="margin: 1rem;">
+                            <label  class="col-sm-2 col-form-label"><b>Color</b></label>
+                            <div class="col-sm-5" style="left:20%;">
+                                <input type="text" class="form-control" id="inputtextcol" placeholder="black"
+                                    style="border:1px solid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3">
+                        <div class="card" style="width:14rem; border: none; align-items: center;">
+                            <div class="card-body"  style="border-radius: 10px;"></div><div id="myDiv" style="width:10rem; height: 13rem; background: #000; border-radius: 10px; left:15%">
+                                <!-- img should be here -->
+                            </div>
+                            <div style="margin-top: 10px;"> <button type="button" class="btn btn-outline-secondary"
+                                    style="width: 23vh; height: 6.5vh; border-radius: 30px;" id="downloadButton">Download</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br></br>
+    <div class="blackScreen">
+        <h1 style="font-size: 1.5rem;">Black Screen Video</h1>
+        <p>If you are utilizing an iOS device, you can watch this video to attain a completely black screen.</p>
+        <br></br>
+        <div style="width:680px; height:450px; margin: auto;"><iframe width="660" height="415"
+                src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="border-radius: 15px;"></iframe></div>
+        <br></br>
+    </div>
+    <div class="container-wiki" style="margin: 2rem;">
+        <h1 style="font-size: 1.5rem; font-weight: bold;"> Wiki</h1>
+        <p style="font-weight: bold; text-align: left; margin:1rem">What is Fullblackscreen.com?</p>
+        <p style="text-align:left; margin: 1rem;">FullBlackscreen.com is a website designed for displaying various
+            colors and messages on your device s screen. You can utilize it to showcase a
+            black or colored screen or display a message of your choice. This website is particularly useful for
+            checking dead pixels, backlight bleeding, or cleaning your screen without having to power off your device.
+            Additionally, you can customize your display with any color and download solid color backgrounds in various
+            sizes and formats. Recently, FullBlackscreen.com has added a new feature that enables users to showcase any
+            message on their screens.</p>
+        <br></br>
+        <div style="width:900px; height:450px; margin: auto;"><iframe width="860" height="415"
+                src="https://www.youtube.com/embed/AjWfY7SnMBI" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen style="border-radius: 15px;"></iframe></div>
+    </div>
+    <br></br>
+    <!-- ********************diffrenece paragraph **************************-->
+    <div class="diff-paragaraph" style="margin: 2rem;">
+        <p style="font-weight: bold; text-align: left; margin:1rem">How do LED and OLED differ, and why is it
+            significant when using a black screen?
+        </p>
+        <p style="text-align:left; margin: 1rem;">LED requires a backlight to function and does not operate on
+            self-illumination, whereas OLED relies on self-illumination and does not require a
+            backlight. When a black screen is displayed on an OLED display, all the pixels are turned off, resulting in
+            substantial power savings and an
+            extended display lifespan. In contrast, since LED requires a backlight, a small amount of power is still
+            consumed even when a black screen is
+            displayed, and the pixels remain active. Therefore, it s important to determine your display type before
+            assuming that you re saving power. An
+            easy method to identify if your screen is OLED or LED is to observe the emitted light when displaying a
+            black screen. If the screen is dark grey,
+            it s an LED screen, but if it s completely black, it s an OLED screen.
+        </p>
+        <p style="font-weight: bold; text-align: left; margin:1rem">What makes people choose this website over a black
+            screen video?
+        </p>
+        <p style="text-align:left; margin: 1rem;">Compared to a black screen video, this website is the most lightweight
+            option available online and consumes minimal processing power and
+            RAM. One key difference between the video and FullBlackScreen is that when accessing the black screen
+            through this website, your device can
+            enter sleep mode, which is not possible with the video. However, this feature was intentionally added to
+            prevent users from accidentally leaving
+            the black screen on and draining their laptop s battery. Although it would have been simple to disable sleep
+            mode, this safeguard was put in
+            place for the convenience of laptop users.</p>
+        <p style="font-weight: bold; text-align: left; margin:1rem">What are the steps to prevent your device from
+            entering sleep mode when the screen is black?
+        </p>
+        <p style="text-align:left; margin: 1rem;">To adjust the sleep duration, please adhere to the following
+            instructions. Remember to reset the time to its default value once you ve finished,
+            as altering it can have adverse effects on battery consumption and screen quality, especially for mobile
+            devices. The steps provided apply
+            specifically to Windows and MAC computers, which are the most commonly used operating systems among users.
+        <ol type="1">
+            <li>To modify the sleep time on a Windows device, navigate to Settings > System > Power & Battery > Screen
+                and Sleep, and adjust the duration
+                accordingly. For quick access to the Power and Battery settings, you can use this shortcut link.</li>
+            <li>On a Mac device, click the Apple icon at the top of the screen, go to System Preferences, and select
+                Energy Saver. From there, you can adjust
+                the durations for both Computer Sleep and Display Sleep to suit your preferences</li>
+            </p>
+        </ol>
+    </div>
+    <br></br>
+    <!--******************** black screen description ***********************-->
+    <div class="blackScreenD" style="margin: 2rem;">
+        <h1 style="font-size: 1.5rem;">Uses of Black Screen</h1>
+        <ol type="1" style="font-weight: bold;">
+            <li>Power Saving</li>
+            <p style="text-align:left; margin: 1rem;  font-weight: 450;">When your device is idle, music isn t playing,
+                or downloads are complete, consider activating the black screen. Studies have demonstrated that
+                utilizing a black screen can result in power savings of up to 58%, but this is contingent on having an
+                OLED display. Keep in mind that LED
+                displays may not provide as significant power savings as you might expect</p>
+            <li>Cleaning</li>
+            <p style="text-align:left; margin: 1rem;  font-weight: 450;">Observe the dust accumulation on your screen.
+                In such cases, white and other bright screens can also reveal the dust build-up. It is
+                recommended to clean your screen frequently using a soft microfiber cloth only. Prior to cleaning, use a
+                towel to gently remove any loose dust.
+                For finer dust particles, use a non-alcoholic and non-corrosive liquid cleaner. To remove sticky dust,
+                avoid exerting pressure and instead, use
+                the microfiber cloth in a gentle, clockwise motion. Applying too much pressure can cause damage to the
+                screen, resulting in backlight bleeding.
+                If you are cleaning the screen of an Apple MacBook, exercise extra caution, as a replacement could be
+                costly. If you don t have a dedicated
+                cleaning kit, don t worry. You can use distilled water and the softest cloth available in your
+                household, provided you do it correctly, this can be
+                just as effective as using a cleaning kit.</p>
+            <li>Testing</li>
+            <p style="text-align:left; margin: 1rem;  font-weight: 450;">To assess your display s contrast, utilize the
+                full screen and adjust your brightness settings as needed. Additionally, this technique can help
+                identify the display type. To do so, turn on a completely black screen in a dark room and observe the
+                pixels. If they are turned off entirely, the
+                screen is OLED. If the screen appears dark gray, it is LED. You can also gauge your screen s refresh
+                rate by launching a screensaver of random
+                colors. If the colors overlap or do not fade correctly, this indicates an issue with the display. We
+                have received feedback from users who were
+                able to identify manufacturing defects in their new monitors thanks to this technique and had them
+                replaced in a timely manner.
+
+                Another practical use case for this method is identifying your backlight level. To check, display a full
+                black screen and scrutinize the light from
+                each corner to ensure it is equal. When Windows 10 was first introduced, numerous users reported uneven
+                backlight distribution when their
+                screen was black. However, this was not a hardware issue but rather a gradient introduced by the new
+                operating system.</p>
+            <li>Dead Pixel Testing</li>
+            <p style="text-align:left; font-weight: 450; margin: 1rem;">You can detect dead pixels on your screen by
+                utilizing different colors, as some pixels may appear normal on one color but malfunction on
+                others. It is crucial to test all possible colors to ensure accuracy. Typically, using a white screen is
+                sufficient for this purpose, as there are 16
+                million colors to choose from, making it nearly impossible to miss a dead pixel.</p>
+            <li>Aesthetics</li>
+            <p style="text-align:left; margin: 1rem;  font-weight: 450;">Enhance the appearance of your device by
+                utilizing various color screens and screensavers. Our platform now includes random color
+                screensavers to further elevate your experience. For MacBook Pro users, you can open a black screen and
+                match your laptop s color for a sleek
+                and eye-catching display. If you have any suggestions or requests for additional features on our
+                website, please do not hesitate to contact us
+                using the official email provided in the contact section. We value all feedback and take it seriously.
+            </p>
+        </ol>
+    </div>
+    <br></br>
+    <!-- *******************************Use of color screen************************* -->
+    <div class="useOfColor" style="margin: 2rem;">
+        <h1 style="font-size: 1.5rem;">Uses of Color Screen</h1>
+        <p style="text-align:left; margin: 1rem;">Achieve a visually stunning effect by matching the color of your
+            screen to that of your MacBook Pro device. For an immersive experience, utilize it with Oculus VR. This can
+            aid in verifying that your VR headset is functioning correctly. With sufficient demand, we may consider
+            developing our website for use with virtual reality devices as well. </p>
+    </div>
+    <br></br>
+    <!-- ******************************* Use of Message displayer ************************* -->
+    <div class="msgDisplay" style="margin: 2rem;">
+        <h1 style="font-size: 1.5rem;">Use of Message displayer</h1>
+        <p style="text-align:left; margin: 1rem;">An advanced module called message displayer has been developed to show
+            messages on a black screen. You have the option to customize the
+            text and background according to your preference. This can be useful to leave notes for others at home or
+            work. It s worth noting that the
+            message will still be displayed even if your device goes to sleep, so it depends on your creativity. Many
+            office workers use our website to leave
+            notes on the screen while taking breaks.</p>
+        <p style="text-align:left; margin: 1rem;"> We re currently working on a new module called message timer, which
+            will be added to the website soon. This is similar to the message
+            displayer, but with a timer. This feature was requested by a user who conducts online classes and wanted a
+            way to let his students know when
+            the break would end. He was already using the Windows 10 black screen feature but requested the addition of
+            this module.</p>
+    </div>
+    <br></br>
+    <!-- ******************************* Uses of Black Screen Video ************************* -->
+    <div class="bsVideo" style="margin: 2rem;">
+        <h1 style="font-size: 1.5rem;">Uses of Black Screen Video</h1>
+        <p style="text-align:left; margin: 1rem;">At present, iOS devices do not support full-screen display when
+            clicking on Boxes due to security reasons. However, you can utilize the
+            embedded video of 1 hour of pure black screen, which can be used in your projects or to keep your system
+            active during downloads. If you are
+            a video editor, this black screen video can be incorporated as a break in your videos. </p>
+    </div>
+    <br></br>
+    <!-- ******************************* What s with the Wallpaper Generator ************************* -->
+    <div class="wallpaperGenerator" style="margin: 2rem;">
+        <h1 style="font-size: 1.5rem;">What s with the Wallpaper Generator</h1>
+        <p style="text-align:left; margin: 1rem;">Generate custom images of any size, format, and color with our
+            Wallpaper Creator tool. With over 16 million colors and 99 million dimension
+            combinations to choose from, you can create solid color backgrounds for your projects or use them as
+            wallpaper on your desktop, tablet, or
+            mobile device.</p>
+        <p style="text-align:left; margin: 1rem;">Do you need a solid color image for your project? No problem! Our
+            generator can create images of any size you need. And did you know that
+            using a black wallpaper on OLED devices can help save power? The LEDs that make up each pixel turn off,
+            prolonging the display s lifespan.
+            That s why black screen wallpapers are a popular choice for all devices - mobile, tablet, and desktop.</p>
+    </div>
+    <br></br>
+    <!-- ******************************* ******************************* Why was FullBlackScreen Project created ************************* -->
+    <div class="fullBlackScreen" style="margin: 2rem;">
+        <h1 style="font-size: 1.5rem;">Why was FullBlackScreen Project created</h1>
+        <p style="text-align:left; margin: 1rem;">Let me share with you the story of how this website came to be. As a
+            software developer and hosting expert, I often work with clients late at
+            night. To take a break, I enjoy listening to music and turning off my monitor. This led me to think of
+            creating a lightweight website that could
+            darken the screen for myself and others who work late at night. Initially, the website only featured a black
+            screen, but I gradually added more
+            colors, a color screen saver, and a message displayer. As more users joined and shared their feedback, I
+            realized there was a demand for a solid
+            color image generator with unlimited colors, sizes, and formats. I developed this feature, and I plan to
+            continue adding new modules based on
+            user requests.</p>
+    </div>
+    <br></br>
+    <!-- ******************************* ******************************* How are people using fullblackscreen.com? ************************* -->
+    <div class="usingFullBS" style="margin: 2rem;">
+        <h1 style="font-size: 1.5rem;">How are people using fullblackscreen.com?</h1>
+        <p style="text-align:left; margin: 1rem;">Our website has been used in many creative ways, as shared by our
+            users:
+        <ol type="1" style="margin: 1rem;">
+            <li>One user with a Dell laptop uses the black screen to take breaks from work and troubleshoot while also
+                saving power by turning off the OLED pixels without turning off the PC.</li>
+            <li>Another user opens the website on their TV when they can t find the controller or don t want to get up.
+            </li>
+            <li>Natalia Ortiz uses it to create an immersive experience while watching videos on one monitor and the
+                black screen on the other monitor. </li>
+            <li>Some users have used it on their phone in a dark room to check for screen burn-ins and dead/stuck
+                pixels.</li>
+            <li>While some users imagine a terrifying experience of wearing Oculus VR and waking up to a black screen,
+                others use it to avoid shutting off
+                the computer but also to reduce the screen s brightness.</li>
+            <li>A user who falls asleep while watching TV opens the website on their remote to reduce the brightness
+                without getting up.</li>
+            <li>Some users use the message displayer to let colleagues know when they will be back after a break or
+                lunch, and their colleagues have
+                started doing the same.</li>
+            <li>A seller in a showroom uses aesthetic colors on their devices, increasing sales and giving them an edge
+                over other sellers.</li>
+            <li>It can also be used while watching relaxing videos such as rain and thunder sounds
+            </li>
+            <li>A teacher uses the website to display the time on which they will be back during a break in an online
+                class.
+            </li>
+            <li>Finally, a user leaves a note on the FullBlackScreen website for their spouse when leaving home, asking
+                them to complete anything pending.
+            </li>
+        </ol>
+        </p>
+    </div>
+
+    </div>
+    </div>
+    </main>
+    <br></br>
+    <footer>
+        <p>&copy; 2023 Color Selection Website</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+
+        var black = document.getElementById("blackTile")
+        var white = document.getElementById("whiteTile")
+        var red = document.getElementById("red")
+        var green = document.getElementById("green")
+        var blue = document.getElementById("blue")
+        var colorChanger = document.getElementById("colorChanger")
+        var colorInput = document.getElementById("colorInput")
+        var cgreenDiv = document.getElementById("cgreenDiv")
+        function openFullscreen() {
+            if (black.requestFullscreen) {
+                black.requestFullscreen();
+            } else if (black.webkitRequestFullscreen) { /* Safari */
+                black.webkitRequestFullscreen();
+            } else if (black.msRequestFullscreen) { /* IE11 */
+                black.msRequestFullscreen();
+            }
+        }
+        function openFullscreenw() {
+            if (white.requestFullscreen) {
+                white.requestFullscreen();
+            } else if (white.webkitRequestFullscreen) { /* Safari */
+                white.webkitRequestFullscreen();
+            } else if (white.msRequestFullscreen) { /* IE11 */
+                white.msRequestFullscreen();
+            }
+        }
+        function openFullscreenr() {
+            if (red.requestFullscreen) {
+                red.requestFullscreen();
+            } else if (red.webkitRequestFullscreen) { /* Safari */
+                red.webkitRequestFullscreen();
+            } else if (red.msRequestFullscreen) { /* IE11 */
+                red.msRequestFullscreen();
+            }
+        }
+        function openFullscreeng() {
+            if (green.requestFullscreen) {
+                green.requestFullscreen();
+            } else if (green.webkitRequestFullscreen) { /* Safari */
+                green.webkitRequestFullscreen();
+            } else if (green.msRequestFullscreen) { /* IE11 */
+                green.msRequestFullscreen();
+            }
+        }
+        function openFullscreenb() {
+            if (blue.requestFullscreen) {
+                blue.requestFullscreen();
+            } else if (blue.webkitRequestFullscreen) { /* Safari */
+                blue.webkitRequestFullscreen();
+            } else if (blue.msRequestFullscreen) { /* IE11 */
+                blue.msRequestFullscreen();
+            }
+        }
+        function openFullscreencgreen() {
+            if (cgreenDiv.requestFullscreen) {
+                cgreenDiv.requestFullscreen();
+            } else if (cgreenDiv.webkitRequestFullscreen) { /* Safari */
+                cgreenDiv.webkitRequestFullscreen();
+            } else if (cgreenDiv.msRequestFullscreen) { /* IE11 */
+                cgreenDiv.msRequestFullscreen();
+            }
+        }
+        function openFullscreenColor() {
+            if (colorChangerColor.requestFullscreen) {
+                colorChangerColor.requestFullscreen();
+            } else if (colorChangerColor.webkitRequestFullscreen) { /* Safari */
+                colorChangerColor.webkitRequestFullscreen();
+            } else if (colorChangerColor.msRequestFullscreen) { /* IE11 */
+                colorChangerColor.msRequestFullscreen();
+            }
+        }
+        function openFullscreenHex() {
+            if (colorChangerHex.requestFullscreen) {
+                colorChangerHex.requestFullscreen();
+            } else if (colorChangerHex.webkitRequestFullscreen) { /* Safari */
+                colorChangerHex.webkitRequestFullscreen();
+            } else if (colorChangerHex.msRequestFullscreen) { /* IE11 */
+                colorChangerHex.msRequestFullscreen();
+            }
+        }
+        function openFullscreenallColors() {
+            if (allColors.requestFullscreen) {
+                allColors.requestFullscreen();
+            } else if (allColors.webkitRequestFullscreen) { /* Safari */
+                allColors.webkitRequestFullscreen();
+            } else if (allColors.msRequestFullscreen) { /* IE11 */
+                allColors.msRequestFullscreen();
+            }
+        }
+        function openFullscreenbtn() {
+            if (colorScreenBg.requestFullscreen) {
+                colorScreenBg.requestFullscreen();
+            } else if (colorScreenBg.webkitRequestFullscreen) { /* Safari */
+                colorScreenBg.webkitRequestFullscreen();
+            } else if (colorScreenBg.msRequestFullscreen) { /* IE11 */
+                colorScreenBg.msRequestFullscreen();
+            }
+        }
+
+        // const colorInput = document.getElementById("colorInput");
+        // const colorDiv = document.getElementById("colorDiv");
+        // const changeColorButton = document.getElementById("changeColorButton");
+        // function changeBackgroundColor(color) {
+        //     colorDiv.style.backgroundColor = color;
+        // }
+        // changeColorButton.addEventListener("click", function() {
+        //     const inputColor = colorInput.value;
+        //     changeBackgroundColor(inputColor);
+        // });
+        var colorChangerColor = document.getElementById("colorChangerColor")
+        var colorChangerHex = document.getElementById("colorChangerHex")
+        var colorInput = document.getElementById("colorInput")
+        var colorInputHex = document.getElementById("colorInputHex")
+        //    yahan se dobara start karna
+
+        // changeBackgroundColor.addEventListener("input",function(){
+        //     colorChangerColor.style.backgroundColor=colorInput.value;
+        //     // colorChangerHex.style.backgroundColor=color.value;
+        // });
+
+        colorChangerColor.style.backgroundColor = colorInput.value;
+
+
+        colorInput.addEventListener("input", function () {
+            colorChangerColor.style.backgroundColor = colorInput.value;
+
+        })
+        colorChangerHex.style.backgroundColor = colorInputHex.value;
+
+        colorInputHex.addEventListener("input", function () {
+
+            colorChangerHex.style.backgroundColor = colorInputHex.value;
+        })
+
+        var exampleColorInput = document.getElementById("exampleColorInput");
+        var cgreenDiv = document.getElementById("cgreenDiv");
+
+        cgreenDiv.style.backgroundColor = exampleColorInput.value;
+        // Add an event listener to the color picker
+        exampleColorInput.addEventListener("input", function () {
+            // Update the background color of the div with the selected color
+            cgreenDiv.style.backgroundColor = exampleColorInput.value;
+        });
+
+
+// SlideShow div
+
+    const allColors = document.getElementById('allColors')
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      console.log("test")
+      return color;
+    }
+    function changeBackgroundColor() {
+      const randomColor = getRandomColor();
+      allColors.style.backgroundColor = randomColor;
+    }
+    setInterval(changeBackgroundColor, 2000);
+
+// Text Eiditor
+var colorInputBg=document.getElementById("colorInputBg");
+var colorInputText=document.getElementById("colorInputText");
+var textarea=document.getElementById("floatingTextarea2");
+var colorText=document.getElementById("colorText");
+var colorScreenBg=document.getElementById("colorScreenBg");
+var btnScreen=document.getElementById("btnScreen");
+
+textarea.style.color=colorInputText.value;
+
+colorInputText.addEventListener("input",function(){
+    textarea.style.color=colorInputText.value;
+});
+
+textarea.addEventListener('input', function() {
+      const enteredText = textarea.value;
+    //   colorInputText.style.backgroundColor=colorText.value;
+      colorText.textContent = ` ${enteredText}`;
+    });
+colorInputBg.addEventListener("input", function () {
+            // Update the background color of the div with the selected color
+            colorScreenBg.style.backgroundColor =colorInputBg.value;
+        });
+// COLOR CHANGE TEXT BOX wALLPAPER TOOL GENRATOR
+// Color
+const inputtextcol = document.getElementById("inputtextcol");
+  const myDiv = document.getElementById("myDiv");
+
+  inputtextcol.addEventListener("input", () => {
+    const inputColor = inputtextcol.value;
+
+    if (isValidColor(inputColor)) {
+      myDiv.style.backgroundColor = inputColor;
+    }
+  });
+
+  // Function to validate color
+  function isValidColor(color) {
+    const colorTest = new Option().style;
+    colorTest.color = color;
+    return colorTest.color === color;
+  }
+
+// width
+
+const inputtexth = document.getElementById("inputtexth");
+  inputtexth.addEventListener("input", () => {
+    const newWidth = inputtexth.value + "px";
+    myDiv.style.width = newWidth;
+  });
+const inputtextw = document.getElementById("inputtextw");
+
+// height
+
+inputtextw.addEventListener("input", () => {
+  const newHeight = inputtextw.value + "px";
+  myDiv.style.height = newHeight;
+ 
+});
+
+// download btn
+document.getElementById('downloadButton').addEventListener('click', function() {
+           
+
+           // Use HTML2Canvas to capture the div as an image
+           html2canvas(myDiv).then(function(canvas) {
+               // Convert the canvas to a data URL
+               const dataURL = canvas.toDataURL('image/png');
+
+               // Create a link element
+               const downloadLink = document.createElement('a');
+               downloadLink.href = dataURL;
+               downloadLink.download = 'content.png'; // Specify the filename
+               downloadLink.style.display = 'none';
+
+               // Append the link to the body and trigger the download
+               document.body.appendChild(downloadLink);
+               downloadLink.click();
+
+               // Clean up
+               document.body.removeChild(downloadLink);
+           });
+       });
+// drop down
+ const sizeSelect = document.getElementById("sizeSelect");
+//   const myDiv = document.getElementById("myDiv");
+
+  sizeSelect.addEventListener("change", updatemyDivSize);
+
+  function updatemyDivSize() {
+    const selectedSize = sizeSelect.value.split("x");
+    const selectedWidth = parseInt(selectedSize[0]);
+    const selectedHeight = parseInt(selectedSize[1]);
+    
+    myDiv.style.width = selectedWidth + "px";
+    myDiv.style.height = selectedHeight + "px";
+  }
+  
+</script>
+</body>
+
+</html>
